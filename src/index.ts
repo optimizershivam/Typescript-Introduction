@@ -181,9 +181,9 @@ const dummyUser : User =
     occupation:"DEveloper",
 }
 
-function checktype(fn) {
+function checktype(Obj:(User|Admin)):string {
    
-    return(fn.type)
+    return(Obj.type)
 }
 console.log(checktype(dummyUser))
 
